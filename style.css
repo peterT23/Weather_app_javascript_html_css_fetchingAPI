@@ -21,9 +21,11 @@ body {
 .search {
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
+
 .search input {
   border: 0;
   outline: 0;
@@ -46,9 +48,11 @@ body {
 
   border-radius: 50%;
 }
+
 .search button img {
   width: 1rem;
 }
+
 .weather-icon {
   width: 50%;
   margin-top: 2rem;
@@ -97,4 +101,19 @@ body {
   text-align: left;
   margin-left: 10px;
   display: none;
+}
+@media (max-width: 460px) {
+  .search {
+    display: inline-block;
+  }
+  .search input {
+    flex-shrink: 2;
+  }
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .col {
+    padding: 10px;
+  }
 }
