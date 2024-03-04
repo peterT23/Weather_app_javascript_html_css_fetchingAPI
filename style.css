@@ -109,6 +109,9 @@ body {
   .search input {
     flex-shrink: 2;
   }
+  .search button {
+    margin-top: 20px;
+  }
   .details {
     flex-direction: column;
     align-items: flex-start;
